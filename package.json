@@ -1,0 +1,14 @@
+{
+  "name": "simple_ticketing",
+  "version": "1.0.0",
+  "description": "Assignment App for VueJS, TailwindCSS & FrappeUI Training Course",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd frontend && npm i",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

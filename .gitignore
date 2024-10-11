@@ -5,3 +5,5 @@
 tags
 node_modules
 __pycache__
+simple_ticketing/www/simple_ticketing.html
+simple_ticketing/public/frontend

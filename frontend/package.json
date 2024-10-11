@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/assets/simple_ticketing/frontend/  && npm run copy-html-entry",
+    "copy-html-entry": "cp ../simple_ticketing/public/frontend/index.html ../simple_ticketing/www/simple_ticketing.html",
     "preview": "vite preview"
   },
   "dependencies": {
+    "frappe-ui": "^0.1.70",
     "vue": "^3.5.10"
   },
   "devDependencies": {
