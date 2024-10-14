@@ -6,7 +6,7 @@ import frappeui from "frappe-ui/vite";
 export default defineConfig({
   plugins: [
     vue(),
-    frappeui() // Use the frappe-ui plugin for integrating Frappe UI components
+    frappeui({ source: "^/(app|login|api|assets|files|pages|builder_assets)" })// Use the frappe-ui plugin for integrating Frappe UI components
   ],
   optimizeDeps: {
     // Include specific dependencies to optimize build process
