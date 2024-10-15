@@ -1,7 +1,6 @@
 <template>
   <Header />
 
-  <h1>Support Tickets</h1>
   <TicketList />
 </template>
 

@@ -5,19 +5,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "description",
+  "title",
   "status",
-  "purchase_date",
-  "category"
+  "category",
+  "priority",
+  "description"
  ],
  "fields": [
-  {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "in_list_view": 1,
-   "label": "Description",
-   "reqd": 1
-  },
   {
    "fieldname": "status",
    "fieldtype": "Select",
@@ -25,22 +19,32 @@
    "options": "Open\nWaiting for reply\nResolved\nClosed"
   },
   {
-   "fieldname": "purchase_date",
-   "fieldtype": "Date",
-   "label": "Purchase Date"
-  },
-  {
    "fieldname": "category",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Category",
-   "options": "Paper Quality\nDelivery\nOther",
-   "reqd": 1
+   "options": "Paper Quality\nDelivery\nOther"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-11 15:08:02.982807",
+ "modified": "2024-10-15 16:54:13.081406",
  "modified_by": "Administrator",
  "module": "Simple Ticketing",
  "name": "Support Ticket",
